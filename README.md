@@ -18,7 +18,7 @@
 2. Запустить IntelliJ IDEA 
 
 3. Склонировать репозиторий командой в консоли:
-   git clone git@github.com:Sm1le63/DiplomProject.git
+   git clone https://github.com/Sm1le63/DiplomProject
 
 4. Запустить контейнеры Docker командой в консоли:
 >`docker-compose up`
