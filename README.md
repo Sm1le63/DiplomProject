@@ -1,6 +1,7 @@
 # Дипломный проект по профессии «Тестировщик»
 
-Дипломный проект представляет собой комплексную автоматизацию тестирования веб-сервиса, который взаимодействует с СУБД и API банка.
+Дипломный проект представляет собой комплексную автоматизацию тестирования веб-сервиса, который взаимодействует с СУБД и
+API банка.
 
 ## Документация
 
@@ -13,15 +14,18 @@
 #### [Отчётные документы по итогам автоматизации](https://github.com/Sm1le63/DiplomProject/blob/main/Documentation/Summary.md)
 
 ### Процедура запуска автотестов
-1. Для запуска авто-тестов нужно заранее установить и запустить [Docker Desktop](https://github.com/netology-code/aqa-homeworks/blob/master/docker/installation.md) на локальной машине
 
-2. Запустить IntelliJ IDEA 
+1. Для запуска авто-тестов нужно заранее установить и
+   запустить [Docker Desktop](https://github.com/netology-code/aqa-homeworks/blob/master/docker/installation.md) на
+   локальной машине
+
+2. Запустить IntelliJ IDEA
 
 3. Склонировать репозиторий командой в консоли:
-   git clone https://github.com/Sm1le63/DiplomProject
+   `git clone https://github.com/Sm1le63/DiplomProject.git`
 
 4. Запустить контейнеры Docker командой в консоли:
->`docker-compose up`
+   `docker-compose up`
 
 5. Запустить приложение командой в консоли
 
@@ -40,6 +44,7 @@
 > `./gradlew test "-Ddb.url=jdbc:postgresql://localhost:5432/app" "-Ddb.username=app" "-Ddb.password=pass"`
 
 7. Создание *Allure* отчёта
+
 > `./gradlew allureReport` - формирование отчёта
 
 > `./gradlew allureServe` - отображение отчёта в браузере
@@ -47,6 +52,6 @@
 8. После выполнения всех тестов и генерации отчета:
 
 - остановить работу приложения командой в консоли:
-   `Ctrl+C`
+  `Ctrl+C`
 - остановить работу контейнеров Docker командой в консоли:
-   `docker-compose down`
+  `docker-compose down`
